@@ -23,7 +23,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="TestAction" Content="Click" Grid.Column="0" Grid.Row="0"></Button>
+        <Button x:Name="TestAction" Content="Click" cal:Message.Attach="TestAction" Grid.Column="0" Grid.Row="0"></Button>
         <Label x:Name="TestLabelWithBinding" Content="{Binding TestLabelWithBinding}" Grid.Column="0" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Label x:Name="TestLabelWithoutBinding" Grid.Column="1" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <TextBox x:Name="TestTextBoxWithBinding" Text="{Binding TestTextBoxWithBinding}" Grid.Column="2" Grid.Row="1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>

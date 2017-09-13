@@ -10,11 +10,6 @@ namespace TestingCaliburnMicro.ViewModels
         public string TestLabelWithoutBinding { get; set; }
         public string TestTextBoxWithBinding { get; set; }
         public string TestTextBoxWithoutBinding { get; set; }
-
-        public void TestAction()
-        {
-        }
-
         public TestViewModel()
         {
             TestLabelWithBinding = "label with binding";
@@ -23,6 +18,11 @@ namespace TestingCaliburnMicro.ViewModels
             TestTextBoxWithBinding = "text box with binding";
             TestTextBoxWithoutBinding = "text box without binding";
         }
+
+        public void TestAction()
+        {
+        }
+
 
         public void Init()
         {

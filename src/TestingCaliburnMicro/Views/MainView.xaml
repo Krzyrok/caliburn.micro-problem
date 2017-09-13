@@ -10,7 +10,8 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
-            <RowDefinition Height="4*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,5 +20,6 @@
         <views:TestView Grid.Row="0" Grid.ColumnSpan="2"/>
         <Label Name="TestLabel" Grid.Row="1" Grid.Column="0"></Label>
         <TextBox Name="TestTextBox" Grid.Row="1" Grid.Column="1"></TextBox>
+        <Button x:Name="TestAction" Content="Click in Main View Model" Grid.Column="0" Grid.Row="2"></Button>
     </Grid>
 </Window>
